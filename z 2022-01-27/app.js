@@ -85,8 +85,8 @@ app.get("/login", (req, res) => {
 
 app.post("/forma", upload.single("pic"), (req, res) => {
   let data = JSON.stringify(req.body);
-  console.log("labas");
-  // res.redirect("/forma");
+  console.log(data);
+  res.redirect("/forma");
 });
 
 app.get("/forma", (req, res) => {
