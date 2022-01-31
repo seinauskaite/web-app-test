@@ -1,0 +1,47 @@
+<style>
+    form {
+        padding: 20px;
+    }
+    button, input {
+        border: none;
+    }
+    .message {
+        color: rgb(199, 17, 17);
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+</style>
+
+{{#if message}}
+<div class='message'>{{message}}</div>
+{{/if}}
+
+<form method="POST" action="/formsubmit">
+    <label>email address</label> 
+    {{emailFail}}
+    <input type="email" name="email" />
+    <label>password</label>
+<select name="?">
+    <option value="1">La</option>
+    <option value="2">Ba</option>
+    <option value="3">Ka</option>
+</select>
+<div>
+    <label><input type="checkbox" name="test" value="12"/>Test1</label>
+    <label><input type="checkbox" name="test" value="24"/>Test2</label>
+    <label><input type="checkbox" name="test" value="10"/>Test3</label>
+    <label><input type="checkbox" name="test" value="8"/>Test4</label>
+</div>
+<div>
+    <label><input type="radio" name="radio" value="90"/>Radio1</label>
+    <label><input type="radio" name="radio" value="80"/>Radio1</label>
+    <label><input type="radio" name="radio" value="70"/>Radio1</label>
+</div>
+<div>
+    <input type="file" name="failas"/>
+    {{!-- <input type="file" name="failas"/>
+    <input type="file" name="failas"/> --}}
+</div>
+    <input type="password" name="password" />
+    <button type="submit">LOGIN</button>
+</form>

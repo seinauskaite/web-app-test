@@ -1,0 +1,11 @@
+#classifieds {
+    padding: 0 5rem;
+}
+
+#classifieds label {
+    display: block;
+}
+
+#classifieds .button-holder {
+    margin-top: 20px;
+}

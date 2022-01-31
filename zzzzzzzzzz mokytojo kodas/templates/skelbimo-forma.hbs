@@ -1,0 +1,64 @@
+ <section id="classifieds">
+        <form action="/classifieds-submit" method="POST">
+            <div class="row">
+                <div class="col-md-7">
+                    <h3>Ad Detail</h3>
+                    <formgroup>
+                        <label>Project title</label>
+                        <input type="text" class="form-control" name="project_title" value="{{data.project_title}}" />
+                        <label>Category</label>
+                        <select class="form-control" name="category">
+                            <option value="1">Verslo skelbimai</option>
+                            <option value="2">Intymus skelbimai</option>
+                            <option value="3">Buities skelbimai</option>
+                        </select>
+                        <label>Price</label>
+                        <input class="form-control" type="number" name="price" value="{{data.price}}" />
+                        <label>Photos of your ad:</label>
+                        <div class="input-holder">
+                            <input class="form-control" type="file" name="photo" required />
+                        </div>
+                        <label>Ad Description</label>
+                        <textarea class="form-control" name="description">{{data.description}}</textarea>
+                    </formgroup>
+                </div>
+                <div class="col-md-5">
+                    <h3>Change Password</h3>
+                    <formgroup>
+                        <label>First Name *</label>
+                        <input class="form-control" type="text" name="first_name" value="{{data.first_name}}" required />
+                        <label>Last Name *</label>
+                        <input class="form-control" type="text" name="last_name" value="{{data.last_name}}" required />
+                        <label>Phone</label>
+                        <input class="form-control" type="phone" name="phone" value="{{data.phone}}" />
+                        <label>Enter Address</label>
+                        <input class="form-control" type="text" name="address" value="{{data.address}}" />
+                        <label>Country</label>
+                        <select class="form-control"name="country">
+                            <option value="uk">United Kingdom</option>
+                            <option value="us">United States</option>
+                            <option value="lt">Lithuania</option>
+                            <option value="ua">Ukraine</option>
+                        </select>
+                        <label>State</label>
+                        <select class="form-control" name="state">
+                            <option value="do">Donetsk Oblast</option>
+                            <option value="lo">Luhansk Oblast</option>
+                            <option value="to">Ternopil Oblast</option>
+                            <option value="zo">Zhytomyr Oblast</option>
+                        </select>
+                        <label>City</label>
+                        <select class="form-control" name="city">
+                            <option value="dn">Donetsk</option>
+                            <option value="lh">Luhansk</option>
+                            <option value="tp">Ternopil</option>
+                            <option value="zh">Zhytomyr</option>
+                        </select>
+                        <div class="button-holder">
+                            <button type="submit" class="btn btn-primary">Ad Post</button>
+                        </div>
+                    </formgroup>
+                </div>
+            </div>
+        </form>
+    </section>

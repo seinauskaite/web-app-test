@@ -1,0 +1,22 @@
+npm init
+
+package name: (node) bit-js-aplikacija
+version: (1.0.0)                                                                                                                                         
+description: test aprasymas                                                                                                                              
+entry point: (app.js) app.js                                                                                                                             
+test command:                                                                                                                                            
+git repository:                                                                                                                                          
+keywords:                                                                                                                                                
+author:
+license: (ISC)
+
+Yes
+
+npm install
+
+npm install nodemon
+
+// "start": "nodemon app.js" // add
+
+//Production Env - Produkcine aplinka
+//Dvelopement Env - Gamybine aplinka
