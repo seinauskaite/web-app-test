@@ -93,6 +93,14 @@ app.get("/forma", (req, res) => {
   res.render("forma");
 });
 
+//****************Fotkiu patalpinimas vietoj****************************
+
+// app.post("/forma", upload.single("pic"), (req, res) => {
+//   let image = "/uploads/" + req.file.filename;
+//   res.render("submited", { image, info: req.body });
+// });
+//****************Fotkiu patalpinimas vietoj****************************
+
 // ///////////////Duomenu ivedimas - STRINGIFY METODAS-----------
 app.post("/simple-forma-submit", (req, res) => {
   let data = JSON.stringify(req.body);
@@ -103,6 +111,7 @@ app.post("/simple-forma-submit", (req, res) => {
 app.get("/simple-forma", (req, res) => {
   res.render("simple-forma");
 });
+
 // ////////////////////Duomenu ivedimas - STRINGIFY METODAS-----------
 
 app.listen(3000);
